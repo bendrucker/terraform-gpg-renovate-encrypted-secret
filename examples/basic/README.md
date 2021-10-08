@@ -1,0 +1,1 @@
+This is a basic example that encrypts plaintext for an organization and exposes is as an output.
