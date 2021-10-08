@@ -5,7 +5,7 @@ output "ciphertext" {
 
 locals {
   ciphertext = nonsensitive(gpg_encrypted_message.secret.result)
-  header = "-----BEGIN PGP MESSAGE-----"
-  footer = "-----END PGP MESSAGE-----"
-  body = trimspace(replace(replace(local.ciphertext, local.header, ""), local.footer, ""))
+  header     = "-----BEGIN PGP MESSAGE-----"
+  footer     = "-----END PGP MESSAGE-----"
+  body       = trimspace(replace(replace(local.ciphertext, local.header, ""), local.footer, ""))
 }

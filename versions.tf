@@ -3,7 +3,7 @@ terraform {
 
   required_providers {
     gpg = {
-      source = "invidian/gpg"
+      source  = "invidian/gpg"
       version = "~> 0.3.0"
     }
   }
