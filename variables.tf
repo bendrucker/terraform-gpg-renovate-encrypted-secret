@@ -20,6 +20,7 @@ variable "public_key" {
   description = "The GPG public key used to encrypt the plaintext value"
   default     = <<-PEM
     -----BEGIN PGP PUBLIC KEY BLOCK-----
+
     mQINBGFDCJIBEAC3CAl22BD+Px9IKG0rP/R32Vs0eWrd20zp4HT+N9PRKc1t3LR6
     20flDiwzmN5rYn6faHF24JKPTX44+xIm/CSHY6ux38u3hZPDFLPnI9jLplquY7AH
     bNYq7mVuY7d8//d9+6dGywn19OEIxCZUgQS7kPFXo6q9Te/W7BNSmJdh1ebrG6GC

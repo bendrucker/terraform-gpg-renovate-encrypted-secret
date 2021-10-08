@@ -4,6 +4,7 @@ resource "gpg_encrypted_message" "secret" {
     var.repository == null ? {} : { r = var.repository },
     )
   )
+  
   public_keys = [
     var.public_key,
   ]
