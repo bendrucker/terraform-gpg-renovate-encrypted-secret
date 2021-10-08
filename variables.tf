@@ -6,7 +6,7 @@ variable "organization" {
 variable "repository" {
   type        = string
   description = "The GitHub repository that can use the secret. If unspecified, all repositories in the organization can use the secret."
-  default     = null
+  default     = ""
 }
 
 variable "plaintext" {

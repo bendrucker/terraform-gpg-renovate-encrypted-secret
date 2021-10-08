@@ -1,9 +1,9 @@
 resource "gpg_encrypted_message" "secret" {
-  content = jsonencode(merge(
-    { o = var.organization, v = var.plaintext },
-    var.repository == null ? {} : { r = var.repository },
-    )
-  )
+  content = jsonencode({
+    o = var.organization,
+    r = var.repository,
+    v = var.plaintext,
+  })
 
   public_keys = [
     var.public_key,
